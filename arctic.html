@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>북끅</title>
+<style>
+* {margin:0; padding:0;}
+li {list-style:none;}
+
+body, html {overflow-y:hidden; width:100%; height:100%; position:relative;}
+#wrap { position:relative;}
+
+
+#logo{width:6%; position:fixed; z-index:9999; top:1.5vh; left:1.5vh; opacity:0.8}
+#logo>a{width:6vw; display:block;}
+#logo>a>img{width:6vw;}
+
+#wrap #footer {position:fixed;z-index:301; top:95%; left:90%;}
+
+
+.bg {width:1920px; height:1080px; top:0; left:0; background-color:rgba(0,0,0,0.5); position:relative;}
+#gamestart {position:absolute; top:15%; left:50%; margin-left:-200px; z-index:60;}
+#gametext {position:absolute; top:26%; left:42%; z-index:65; cursor:pointer;}
+#ex {position:absolute; top:60%; left:41%;}
+
+#a1 {background-image:url(img/arctic_bg2.png); width:4400px; height:100vh; position:absolute; z-index:50; top:0; overflow:hidden;} 
+#w_bear {}
+#w_bear img {width:450px; height:230px; position:absolute; top:730px; z-index:70;}
+
+#w_wrap {width:4000px; height:100vh; position:relative;}
+#w_wrap ul li {position:absolute; z-index:50;}
+#w_wrap ul li a img {width:150px;}
+#w_wrap ul li:nth-child(19) a img {width:120px;}
+#w_wrap ul li:nth-child(20) a img {width:120px;}
+#w_wrap ul li:nth-child(21) a img {width:120px;}
+#w_wrap ul li:nth-child(22) a img {width:120px;}
+#w_wrap ul li:nth-child(23) a img {width:120px;}
+#w_wrap ul li:nth-child(24) a img {width:120px;}
+#w_wrap ul li:nth-child(25) a img {width:120px;}
+#w_wrap ul li:nth-child(26) a img {width:120px;}
+#w_wrap ul li:last-child a img {width:120px;}
+
+h1 {padding-left:44%; padding-top:2%; font-size:50px; position:fixed; z-index:150; color:#333; opacity:1;}
+h2  { font-size:50px; padding-left:53%; position:fixed; padding-top:2.2%; z-index:149; color:#333; opacity:1;}
+
+/*딜레이용*/
+
+#d1 {width:300vw; height:100vh; background-color:#555; z-index:600; opacity:0; visibility:hidden; top:0; left:0; position:relative;}
+#dc1 {position:absolute; width:1920px; height:1080px; left:2470px;}
+#d1 #dc1 a img {width:800px; margin-left:550px; margin-top:230px;}
+
+	
+</style>
+<script src="js/jquery-3.2.1.js">
+</script>
+<script src="js/jQueryRotate.js">
+</script>
+<script>
+$(document).ready(function(e) {
+	
+	
+
+	//게임을 시작해볼까
+	var angle = 0;
+  setInterval(function(){
+    angle+=3;
+  $("#gamestart").rotate(angle);
+  },50);
+
+	$('#gametext').click(function(){
+		$('.bg').fadeOut(1000);
+		$('#gamestart').fadeOut(1000);
+		
+	//랜덤배치
+	var obj=$('#w_wrap ul li');
+	obj.each(function(){
+		var objx=Math.random()*4000+600
+	 	var objy=Math.random()*900
+		$(this).css('left',objx);
+		$(this).css('top',objy);
+	});
+	
+	
+    $(function(){
+	///////////////// 월리 걷기 움직임
+	
+  $("#a1").css({visibility:"visible"});
+
+  var aniXStop =3500;
+  var aniX= -480; //월리의 초기 위치 조절 (브라우져화면 좌측 안보이는 위치에 배치하여 거기서부터 걸어나오도록)
+  var wallyMove = false;
+			
+  function wally_animation(){ //처음 사이트 접속했을때 월리가 자동으로 걸어나오는 움직임 설정
+		aniX+=30; //걸음 이동폭
+		if(aniX >= aniXStop) { //자동으로 걸어나온 후 멈추는 위치
+			aniX = aniXStop; //자동으로 걸어나온후 멈추는 위치
+			clearInterval(aniTimer1);
+			
+		}
+		$("#w_bear img").css({left:aniX});
+		walkingNextStart();
+  }
+  var aniTimer1=setInterval(wally_animation,130);//100=0.1초간격으로 걷기장면을 실행함
+	});
+	$("#a1").animate({right:'0'},18000);
+	
+	//스코어
+	var score=10;
+	 $('#w_wrap ul li').click(function(e){
+			 $("h2").text(score);
+	});
+	//이미지 누르면 사라짐
+	
+	$('#w_wrap ul #e1').click(function(){
+			$('#w_wrap ul #e1').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e2').click(function(){
+			$('#w_wrap ul #e2').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e3').click(function(){
+			$('#w_wrap ul #e3').hide();
+                    score+=10;
+					audio.play();
+	});
+	
+	$('#w_wrap ul #e4').click(function(){	
+	
+			$('#w_wrap ul #e4').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e5').click(function(){
+			$('#w_wrap ul #e5').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e6').click(function(){
+			$('#w_wrap ul #e6').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e7').click(function(){
+			$('#w_wrap ul #e7').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e8').click(function(){
+			$('#w_wrap ul #e8').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e9').click(function(){
+			$('#w_wrap ul #e9').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e10').click(function(){
+			$('#w_wrap ul #e10').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e11').click(function(){
+			$('#w_wrap ul #e11').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e12').click(function(){
+			$('#w_wrap ul #e12').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e13').click(function(){
+			$('#w_wrap ul #e13').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e14').click(function(){
+			$('#w_wrap ul #e14').hide();
+                    score+=10;
+					audio.play();
+	});
+	$('#w_wrap ul #e15').click(function(){
+			$('#w_wrap ul #e15').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e16').click(function(){
+			$('#w_wrap ul #e16').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e17').click(function(){
+			$('#w_wrap ul #e17').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e18').click(function(){
+			$('#w_wrap ul #e18').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e19').click(function(){
+			$('#w_wrap ul #e19').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e20').click(function(){
+			$('#w_wrap ul #e20').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e21').click(function(){
+			$('#w_wrap ul #e21').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e22').click(function(){
+			$('#w_wrap ul #e22').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e23').click(function(){
+			$('#w_wrap ul #e23').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e24').click(function(){
+			$('#w_wrap ul #e24').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e25').click(function(){
+			$('#w_wrap ul #e25').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e26').click(function(){
+			$('#w_wrap ul #e26').hide();
+                    score+=10;
+	});
+	$('#w_wrap ul #e27').click(function(){
+			$('#w_wrap ul #e27').hide();
+                    score+=10;
+	});
+	
+	$('#d1').delay(19200).animate({top:0},500,function(){
+					
+		$(this).css({opacity:1});
+		$(this).css({visibility:"visible"});
+		$('#w_bear').css({opacity:0});
+		$('h1').css({opacity:0});
+		$('h2').css({opacity:0});	                 
+		});
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="logo"><a href="index.html"><img src="img/usual_logo2.png" alt="로고"></a></div>
+    <div id="footer">ⓒ Earthwithus Corp.</div>
+    <audio id="sound">
+    	<source src="Blop-Mark_DiAngelo-79054334.wav">
+	</audio>
+	<h1>Score:</h1>
+		<h2>0</h2>
+	<article id="a1">
+    	
+    	<div class="bg">
+    		<div id="gamestart"><img src="img/gamestart.png" alt="게임스타트" width="400"></div>
+            <div id="gametext"><img src="img/gametext.png" alt="게임시작 버튼" width="300"></div>
+        	<div id="ex"><img src="img/ex.png" alt="북극곰을 도와주세요."></div>
+   		</div>
+        <div id="w_bear">
+        	<img src="img/w_bear.png" alt="북극곰">
+        </div>
+        
+        <div id="w_wrap">
+        	<ul>
+            	<li id="e1"><a href="#"><img src="img/seal1.png" alt="바다표범1"></a></li>
+                <li id="e2"><a href="#"><img src="img/seal1.png" alt="바다표범1"></a></li>
+                <li id="e3"><a href="#"><img src="img/seal1.png" alt="바다표범1"></a></li>
+                <li id="e4"><a href="#"><img src="img/seal1.png" alt="바다표범1"></a></li>
+                <li id="e5"><a href="#"><img src="img/seal1.png" alt="바다표범1"></a></li>
+                <li id="e6"><a href="#"><img src="img/seal1.png" alt="바다표범1"></a></li>
+                <li id="e7"><a href="#"><img src="img/seal1.png" alt="바다표범1"></a></li>
+                <li id="e8"><a href="#"><img src="img/seal1.png" alt="바다표범1"></a></li>
+                <li id="e9"><a href="#"><img src="img/seal1.png" alt="바다표범1"></a></li>
+                
+                <li id="e10"><a href="#"><img src="img/seal2.png" alt="바다표범2"></a></li>
+                <li id="e11"><a href="#"><img src="img/seal2.png" alt="바다표범2"></a></li>
+                <li id="e12"><a href="#"><img src="img/seal2.png" alt="바다표범2"></a></li>
+                <li id="e13"><a href="#"><img src="img/seal2.png" alt="바다표범2"></a></li>
+                <li id="e14"><a href="#"><img src="img/seal2.png" alt="바다표범2"></a></li>
+                <li id="e15"><a href="#"><img src="img/seal2.png" alt="바다표범2"></a></li>
+                <li id="e16"><a href="#"><img src="img/seal2.png" alt="바다표범2"></a></li>
+                <li id="e17"><a href="#"><img src="img/seal2.png" alt="바다표범2"></a></li>
+                <li id="e18"><a href="#"><img src="img/seal2.png" alt="바다표범2"></a></li>
+                
+                <li id="e19"><a href="#"><img src="img/pen.png" alt="펭귄"></a></li>
+                <li id="e20"><a href="#"><img src="img/pen.png" alt="펭귄"></a></li>
+                <li id="e21"><a href="#"><img src="img/pen.png" alt="펭귄"></a></li>
+                <li id="e22"><a href="#"><img src="img/pen.png" alt="펭귄"></a></li>
+                <li id="e23"><a href="#"><img src="img/pen.png" alt="펭귄"></a></li>
+                <li id="e24"><a href="#"><img src="img/pen.png" alt="펭귄"></a></li>
+                <li id="e25"><a href="#"><img src="img/pen.png" alt="펭귄"></a></li>
+                <li id="e26"><a href="#"><img src="img/pen.png" alt="펭귄"></a></li>
+                <li id="e27"><a href="#"><img src="img/pen.png" alt="펭귄"></a></li>
+                <div id="d1">
+                	<div id="dc1"><a href="arctic_popup1.html"><img src="img/gameover.png" alt="게임오버"></a></div>
+                </div>
+            </ul>
+        </div>  
+    </article>
+</div>
+</body>
+</html>

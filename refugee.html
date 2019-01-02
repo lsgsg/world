@@ -1,0 +1,878 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>당신의 지구 : 난민</title>
+<style>
+body{width:100%; height:100%; overflow-y:hidden}
+* {margin:0; padding:0;}
+li {list-style:none;}
+a {text-decoration:none; color#333; display:block;}
+img {width:100%; height:100%;}
+#wrap {width:100%; height:100%;}
+#logo{width:6%; position:fixed; z-index:9999; top:1.5vh; left:1.5vh; opacity:0.8}
+#copyright{position:fixed;top:95.5vh; right:10px; color:#666; font-size:0.6vw; z-index:9999}
+#wrap>article {position:absolute;}
+
+#r1 div {position:absolute;}
+
+article {width:200vw;
+		 height:100%;
+		 float:left;
+		 }
+		 
+article#r1 {width:66.66666666666667vw;
+			height:100%;
+			position:relative;
+			}
+
+#refugeeEp1 {width:66.66666666666667vw;
+			height:100vh;
+			overflow:hidden;
+			background-image:url(img/background.png);
+			background-size:100% 100%;}
+						
+#r1 ul {position:relative;}
+
+#r1 ul li {position:absolute;}
+
+#r1 ul li:first-child {top:18.5vw; width:14%; z-index:5}
+#r1 ul li:nth-child(2){top:23vw; left:7vw; width:11%; z-index:5}
+#r1 ul li:nth-child(3){top:19.4vw; left:14.3vw; width:12%;z-index:5}
+#r1 ul li:nth-child(4){top:21.5vw; left:25vw; width:21.7%;z-index:5}
+#r1 ul li:nth-child(5){top:22vw; left:51vw; width:13%;z-index:5}
+#r1 ul li:nth-child(6){top:8vw; left:2vw; width:6%; }
+#r1 ul li:nth-child(7){top:14vw; left:21.2vw; width:14%;z-index:4;}
+#r1 ul li:nth-child(8){top:9vw; left:8vw; width:5%;}
+
+
+#r1 ul li:nth-child(9) {top:19vw; left:60vw; width:11%;}
+#r1 ul li:nth-child(10) {top:5vw; left:11vw; width:5%;}
+#r1 ul li:nth-child(11) {top:18vw; left:9.8vw; width:1.5%; opacity:1; z-index:15}
+
+
+
+
+#r1 ul li:nth-child(12) {top:22vw; left:33.4vw; width:2%;opacity:1; z-index:6}
+#r1 ul li:nth-child(13) {top:25vw; left:40vw; opacity:1; z-index:6}
+#r1 ul li:nth-child(14) {top:14vw; left:54vw; width:5%;}
+#r1 ul li:nth-child(15) {top:20vw; left:13.9vw; width:24.375vw; height:40.4vh; z-index:10}
+#r1 ul li:nth-child(16) {top:25.5vw; left:8vw; width:6.84375vw;  z-index:10}
+
+article#r2 {width:66.66666666666667vw;
+			height:100%;
+			position:relative;
+			left:66.66666666666667vw;
+	}
+
+
+#r2 div {position:absolute;}
+
+
+				 
+#refugeeEp2 {width:66.66666666666667vw;
+			 height:100vh;
+			overflow:hidden;
+					 background-color: #eee;
+  background-image: url("https://drive.google.com/uc?export=view&id=0BzFF7FmbJUo5X0NEUXFVd0NBcWc");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;}
+  
+#refugeeEp2:after {
+  content: '';
+  width:66.66666666666667vw;
+			 height:100vh;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 5000;
+  -webkit-animation: thunder-bg 6s infinite;
+          animation: thunder-bg 6s infinite;
+}
+
+
+canvas {
+	width:66.66666666666667vw;
+			 height:100vh;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#canvas3 {
+  z-index: 500;
+}
+
+#canvas2 {
+  z-index: 1000;
+}
+
+#canvas1 {
+  z-index: 5000;
+}
+
+@-webkit-keyframes thunder-bg {
+  0% {
+    background-color: rgba(59, 59, 59, 0.4);
+  }
+  9% {
+    background-color: rgba(59, 59, 59, 0.5);
+  }
+  10% {
+    background-color: rgba(59, 59, 59, 0.3);
+  }
+  10.5% {
+    background-color: rgba(34, 34, 34, 0.5);
+  }
+  80% {
+    background-color: rgba(34, 34, 34, 0.9);
+  }
+  82% {
+    background-color: rgba(59, 59, 59, 0.3);
+  }
+  83% {
+    background-color: rgba(34, 34, 34, 0.6);
+  }
+  83.5% {
+    background-color: rgba(59, 59, 59, 0.3);
+  }
+  100% {
+    background-color: rgba(34, 34, 34, 0.5);
+  }
+}
+
+		
+article#r2 ul{position:relative;}
+
+article#r2 ul li {position:absolute;}
+
+article#r2 ul li:first-child {top:0vh; width:40%;}
+article#r2 ul li:nth-child(2) {top:3vh; left:15vw; width:48%;}
+article#r2 ul li:nth-child(3) {top:0vh; left:40vw; width:46%;}
+article#r2 ul li:nth-child(4) {top:40vh; left:4vw; width:52.552083333333336vw; z-index:5}
+article#r2 ul li:nth-child(5) {top:85vh; left:-20vw; width:120vw; z-index:600;}/*567 파도*/
+article#r2 ul li:nth-child(6) {top:77vh; left:-20vw; width:120vw;z-index:5}
+article#r2 ul li:nth-child(7) {top:70vh; left:-20vw; width:120vw; height:20.5vh}
+article#r2 ul li:nth-child(8) {top:48vh; left:3vw; width:85%;z-index:500;}
+article#r2 ul li:nth-child(9) {top:48vh; left:7vw; width:4.052083333333334vw; z-index:490;
+										animation: kidkid  5s linear infinite alternate; }
+@keyframes kidkid {
+        from {
+            transform: translateX(0px)
+        }
+        to {
+            transform: translateX(600px)
+        }
+    }
+										
+
+#bomba{animation: tang  0.3s linear infinite alternate;}
+@keyframes tang {
+        from {
+            transform: translateX(0px)
+        }
+        to {
+            transform: translateX(10px)
+        }
+    }
+#bombb{animation: tang  0.3s linear infinite alternate;}
+#bombc{animation: tang  0.3s linear infinite alternate;}
+
+#r3{
+	width:66.66666666666667vw;
+			height:100%;
+			position:relative;
+			left:133.222222vw;
+	background:url(img/background3.jpg) no-repeat;
+	 background-position:center;
+	 background-size:100% 100%;}
+	 
+#r3>ul{position:relative;}	 
+#r3>ul>li{position:absolute;}
+#r3>ul>li:nth-child(1){width:32.96875vw; height:42.3vh; top:26vw; left:26vw;}
+#r3>ul>li:nth-child(2){width:34.583333333333336vw;height:15vh;top:35vw; left:25vw;z-index:9999}
+	
+#r3>ul>li:nth-child(2) a {width:34.583333333333336vw; height:15vh; top:35vw; left:25vw; z-index:9999}
+#r3>ul>li:nth-child(3){width:50vw; top:15vw; left:20vw; color:#fff; font-weight:bold; font-size:3vw; opacity:0; text-align:center;}
+
+#wall{width:3.4895833333333335vw; height:80.3vh; top:-200vh; left:20vw;}
+
+
+
+
+
+
+
+
+
+
+
+#container {
+	
+	position: absolute;
+	z-index: 200;
+	bottom: 0;
+	margin-bottom: 0px;
+	/*
+	bottom: 50%;
+	margin-bottom: -400px;
+	*/
+	left: 0;
+	/*min-height: 800px;*/	
+}
+.wrapper {
+	width: 200vw;
+	height:100vh;
+
+
+	z-index:9000;
+	position: relative;
+}
+
+.ww_animation { 
+
+   position:fixed;
+   z-index:9000;
+   left:0px;
+   bottom:30px;
+   margin-bottom:0; 
+   /*
+   bottom:50%;
+   margin-bottom:-365px; 
+   */
+   width:216px; height:414px; 
+
+   
+}
+.ww_animation .movie { position:absolute; left:0; top:4vw; width:8.489583333333334vw; height:37.9vh;  }
+.ww_animation .movie img { position:absolute;left:0; top:0vw; visibility:hidden; }
+
+
+.scroll-tooltip {
+	position: fixed;
+	display: block;
+	z-index:400;
+	left: 830px;
+	top:20vw;
+	opacity:0;
+	width:8vw;
+	animation: mousemo  0.8s linear infinite alternate}
+	
+	@keyframes mousemo {
+        from {
+            transform: translateY(0px)
+        }
+        to {
+            transform: translateY(20px)
+        }
+    }
+	
+	
+
+
+</style>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jQueryRotateCompressed.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	
+	
+	//장면2의 비내리는 설정
+var canvas1 = document.getElementById('canvas1');
+var canvas2 = document.getElementById('canvas2');
+var canvas3 = document.getElementById('canvas3');
+var ctx1 = canvas1.getContext('2d');
+var ctx2 = canvas2.getContext('2d');
+var ctx3 = canvas3.getContext('2d');
+
+var rainthroughnum = 500;
+var speedRainTrough = 25;
+var RainTrough = [];
+
+var rainnum = 500;
+var rain = [];
+
+var lightning = [];
+var lightTimeCurrent = 0;
+var lightTimeTotal = 0;
+
+var w = canvas1.width = canvas2.width = canvas3.width = window.innerWidth;
+var h = canvas1.height = canvas2.height = canvas3.height = window.innerHeight;
+window.addEventListener('resize', function() {
+  w = canvas1.width = canvas2.width = canvas3.width = window.innerWidth;
+  h = canvas1.height = canvas2.height = canvas3.height = window.innerHeight;
+});
+
+function random(min, max) {
+  return Math.random() * (max - min + 1) + min;
+}
+
+function clearcanvas1() {
+  ctx1.clearRect(0, 0, w, h);
+}
+
+function clearcanvas2() {
+  ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+}
+
+function clearCanvas3() {
+  ctx3.globalCompositeOperation = 'destination-out';
+  ctx3.fillStyle = 'rgba(0,0,0,' + random(1, 30) / 100 + ')';
+  ctx3.fillRect(0, 0, w, h);
+  ctx3.globalCompositeOperation = 'source-over';
+};
+
+function createRainTrough() {
+  for (var i = 0; i < rainthroughnum; i++) {
+    RainTrough[i] = {
+      x: random(0, w),
+      y: random(0, h),
+      length: Math.floor(random(1, 830)),
+      opacity: Math.random() * 0.2,
+      xs: random(-2, 2),
+      ys: random(10, 20)
+    };
+  }
+}
+
+function createRain() {
+  for (var i = 0; i < rainnum; i++) {
+    rain[i] = {
+      x: Math.random() * w,
+      y: Math.random() * h,
+      l: Math.random() * 1,
+      xs: -4 + Math.random() * 4 + 2,
+      ys: Math.random() * 10 + 10
+    };
+  }
+}
+
+function createLightning() {
+  var x = random(100, w - 100);
+  var y = random(0, h / 4);
+
+  var createCount = random(1, 3);
+  for (var i = 0; i < createCount; i++) {
+    single = {
+      x: x,
+      y: y,
+      xRange: random(5, 30),
+      yRange: random(10, 25),
+      path: [{
+        x: x,
+        y: y
+      }],
+      pathLimit: random(40, 55)
+    };
+    lightning.push(single);
+  }
+};
+
+function drawRainTrough(i) {
+  ctx1.beginPath();
+  var grd = ctx1.createLinearGradient(0, RainTrough[i].y, 0, RainTrough[i].y + RainTrough[i].length);
+  grd.addColorStop(0, "rgba(255,255,255,0)");
+  grd.addColorStop(1, "rgba(255,255,255," + RainTrough[i].opacity + ")");
+
+  ctx1.fillStyle = grd;
+  ctx1.fillRect(RainTrough[i].x, RainTrough[i].y, 1, RainTrough[i].length);
+  ctx1.fill();
+}
+
+function drawRain(i) {
+  ctx2.beginPath();
+  ctx2.moveTo(rain[i].x, rain[i].y);
+  ctx2.lineTo(rain[i].x + rain[i].l * rain[i].xs, rain[i].y + rain[i].l * rain[i].ys);
+  ctx2.strokeStyle = 'rgba(174,194,224,0.5)';
+  ctx2.lineWidth = 1;
+  ctx2.lineCap = 'round';
+  ctx2.stroke();
+}
+
+function drawLightning() {
+  for (var i = 0; i < lightning.length; i++) {
+    var light = lightning[i];
+
+    light.path.push({
+      x: light.path[light.path.length - 1].x + (random(0, light.xRange) - (light.xRange / 2)),
+      y: light.path[light.path.length - 1].y + (random(0, light.yRange))
+    });
+
+    if (light.path.length > light.pathLimit) {
+      lightning.splice(i, 1);
+    }
+
+    ctx3.strokeStyle = 'rgba(255, 255, 255, .1)';
+    ctx3.lineWidth = 3;
+    if (random(0, 15) === 0) {
+      ctx3.lineWidth = 6;
+    }
+    if (random(0, 30) === 0) {
+      ctx3.lineWidth = 8;
+    }
+
+    ctx3.beginPath();
+    ctx3.moveTo(light.x, light.y);
+    for (var pc = 0; pc < light.path.length; pc++) {
+      ctx3.lineTo(light.path[pc].x, light.path[pc].y);
+    }
+    if (Math.floor(random(0, 30)) === 1) { //to fos apo piso
+      ctx3.fillStyle = 'rgba(255, 255, 255, ' + random(1, 3) / 100 + ')';
+      ctx3.fillRect(0, 0, w, h);
+    }
+    ctx3.lineJoin = 'miter';
+    ctx3.stroke();
+  }
+};
+
+function animateRainTrough() {
+  clearcanvas1();
+  for (var i = 0; i < rainthroughnum; i++) {
+    if (RainTrough[i].y >= h) {
+      RainTrough[i].y = h - RainTrough[i].y - RainTrough[i].length * 5;
+    } else {
+      RainTrough[i].y += speedRainTrough;
+    }
+    drawRainTrough(i);
+  }
+}
+
+function animateRain() {
+  clearcanvas2();
+  for (var i = 0; i < rainnum; i++) {
+    rain[i].x += rain[i].xs;
+    rain[i].y += rain[i].ys;
+    if (rain[i].x > w || rain[i].y > h) {
+      rain[i].x = Math.random() * w;
+      rain[i].y = -20;
+    }
+    drawRain(i);
+  }
+}
+
+function animateLightning() {
+  clearCanvas3();
+  lightTimeCurrent++;
+  if (lightTimeCurrent >= lightTimeTotal) {
+    createLightning();
+    lightTimeCurrent = 0;
+    lightTimeTotal = 200;  //rand(100, 200)
+  }
+  drawLightning();
+}
+
+function init() {
+  createRainTrough();
+  createRain();
+  window.addEventListener('resize', createRainTrough);
+}
+init();
+
+function animloop() {
+  animateRainTrough();
+  animateRain();
+  animateLightning();
+  requestAnimationFrame(animloop);
+}
+animloop(); // 장면2의 비내리는 설정
+
+
+
+
+
+
+
+
+
+
+
+$(function(){
+	///////////////// 난민 소년 걷기 움직임
+	
+  $(".movie img:first").css({visibility:"visible"});
+
+  var aniXStop =800;
+  var aniX= -280; //난민 의 초기 위치 조절 (브라우져화면 좌측 안보이는 위치에 배치하여 거기서부터 걸어나오도록)
+  var wwMove = false;
+			
+  function ww_animation(){ //처음 사이트 접속했을때 난민소년이 자동으로 걸어나오는 움직임 설정
+		aniX+=30; //걸음 이동폭
+		if(aniX >= aniXStop) { //자동으로 걸어나온 후 멈추는 위치
+			aniX = aniXStop; //자동으로 걸어나온후 멈추는 위치
+			clearInterval(aniTimer1);
+			show_tooltip();
+			
+		}
+		$(".ww_animation").css({left:aniX});
+		walkingNextStart();
+  }
+  var aniTimer1=setInterval(ww_animation,100);//100=0.1초간격으로 걷기장면을 실행함
+  
+  var frameNum=0;
+  function walkingNextStart(){
+	  frameNum+=1;
+	  if(frameNum> $(".movie.start img:last").index() ){ 
+		  frameNum=0
+	  }; 
+	  $(".movie img").css({visibility:"hidden"});
+	  $(".movie.start img:eq("+frameNum+")").css({visibility:"visible"});
+  }
+  function walkingNext(){
+	  //if (scrollLeft >= aniXStop){
+	hide_tooltip();
+			
+		frameNum++;
+		  if(frameNum> $(".movie.wheel img:last").index() ){
+			  frameNum=0
+		  };
+		  $(".movie img").css({visibility:"hidden"});
+		  $(".movie.wheel img:eq("+frameNum+")").css({visibility:"visible"});
+		  //$(".ww_animation").css({left: scrollLeft});
+	  //}
+  }
+  
+  ///////////////// 마우스휠 및 스크롤 설정
+  var wheelScroll="noPop";
+  var scrollTarget = $('body,html');
+  var deltaWaling="next";
+  var scrollLeft = 0;
+  scrollTarget.mousewheel(function(event, delta){
+	 if (    !(navigator.appVersion.indexOf("Mac")!=-1)  ) {
+				if(wheelScroll=="noPop"){
+					$(this).stop().animate({scrollLeft: (this.scrollLeft-(delta * 300) //한번 휠스크롤했을때 이동거리(600px)
+					)}, 1000 //휠스크롤했을때 이동하는 속도(1000이 1초)
+					,"linear");
+				}
+					
+				event.preventDefault();
+	 } else if (   navigator.appVersion.indexOf("Mac")!=-1   ){
+				if(wheelScroll=="noPop"){
+					$(this).stop().animate({scrollLeft: (this.scrollLeft-(delta * 600 / 60 ) //mac os에서 한번 휠스크롤했을때 이동거리 (맥은 휠을 빨리 돌렸을때 스크롤 거리가 더 크므로  나누기 60을 하여 줄임)
+					)}, 1000 //mac os에서 휠스크롤했을때 이동하는 속도
+					,"linear");
+				}
+		
+	 }	 
+  } );
+  
+  $(window).scroll(function(){
+	  walkingNext();
+	  scrollLeft = $(window).scrollLeft();
+	  //console.log(scrollLeft);
+	    if(scrollLeft>=1700){
+		$('#wall').stop().animate({top:'20vh'},1500,'easeOutBounce');
+		$('#nono').stop().animate({opacity:1},1000);
+	}else{
+		$('#wall').stop().animate({top:'-150vh'},1500,'easeOutBounce');
+		$('#nono').stop().animate({opacity:0},1000);
+	}
+  });
+	
+	function show_tooltip(){
+		$(".scroll-tooltip").fadeIn();
+	}
+	function hide_tooltip(){
+		$(".scroll-tooltip").fadeOut();
+	}	
+
+
+
+
+
+
+
+
+
+	
+
+function tank1() {
+  
+  setTimeout(tank1, 15000);
+
+$('#tank').animate({left:'28vw',top:'10vw'},5000,function(){
+	$(this).css({'transform': 'rotate(12deg)'})
+	$(this).animate({left:'35vw',top:'30vh'},5000,function(){
+		$(this).css({'transform':'scaleX(-1)'})
+		$('#tank').animate({left:'24vw',top:'14vw'},5000,function(){
+			$(this).css({'transform':'scaleX(1)'})
+			})
+		});
+	});	
+	
+
+	 };
+tank1(); //탱크 움직임 
+
+function soldier() {
+  
+  setTimeout(soldier, 20000);
+
+$('#s1').animate({left:'30vw'},5000)
+$('#s2').delay(1500).animate({left:'30vw'},5000)
+$('#s3').delay(3000).animate({left:'30vw'},5000)
+
+$('#s4').delay(4500).animate({left:'30vw'},5000)
+
+$('#s1').delay(7000).animate({left:'0vw'},5000)
+$('#s2').delay(8500).animate({left:'7vw'},5000)
+$('#s3').delay(10000).animate({left:'14.3vw'},5000)
+
+$('#s4').delay(11500).animate({left:'25vw'},5000)
+
+$('#bomba').animate({left:'39vw'},5000)
+
+
+$('#bombb').delay(4500).animate({left:'39vw'},5000)
+$('#bombc').delay(4500).animate({left:'44.5vw'},5000)
+
+
+$('#bomba').delay(7000).animate({left:'9vw'},5000)
+
+
+$('#bombb').delay(11500).animate({left:'33.4vw'},5000)
+$('#bombc').delay(11500).animate({left:'40vw'},5000)
+
+
+
+	 };
+soldier(); //병사 움직임 
+
+
+$('#refugeef').delay(3000).animate({'opacity':0},3000) //초기 가족사라짐
+$('.scroll-tooltip').delay(4000).animate({opacity:1},3000)//초기 스크롤 안보였다 보이기
+	
+function flight() {
+  
+  setTimeout(flight, 6000);	
+$('#flight').animate({'left':'2vw','top':'2vw'},3000,function(){
+	$(this).css({'transform':'scale(-1)'})
+	$(this).animate({left:'54vw','top':'15vw'},3000,function(){
+		$(this).css({'transform':'scale(1)'})
+		})
+	})
+	
+}
+flight(); //병사 움직임 
+	
+	
+	function tang3(){
+		setTimeout(tang3,1000)
+		
+	
+$('#r1 ul li:nth-child(10)').animate({left:'10.2vw',top:'6vw'},1000,function(){
+	$(this).animate({top:'5vw',left:'11vw'})
+	});
+	}
+		tang3();
+						
+});
+
+ function wavewave(){
+	 setTimeout(wavewave,1000)
+	 
+	 
+$('#wvwv1').animate({top:'75vh',left:'-20vw'},1000,function(){
+	$(this).animate({top:'80vh',left:'1vw'},1000,function(){
+		$(this).animate({top:'75vh',left:'-20vw'},1000)
+		})
+	});
+$('#wvwv2').animate({top:'65vh',left:'1vw'},1000,function(){
+	$(this).animate({top:'75vh',left:'-20vw'},1000,function(){
+		$(this).animate({top:'65vh',left:'1vw'},1000)
+		})
+	})
+$('#wvwv3').animate({top:'55vh',left:'-20vw'},1000,function(){
+	$(this).animate({top:'65vh',left:'1vw'},1000,function(){
+		$(this).animate({top:'55vh',left:'-20vw'},1000)
+		})
+	})
+
+} wavewave();// 파도 움직임
+
+ function wavewave1(){
+	 setTimeout(wavewave1,10000)
+$('#cloud1').animate({left:'30vw'},10000,function(){
+	$(this).animate({left:0},10000)
+	})
+$('#cloud2').animate({left:'45vw'},10000,function(){
+	$(this).animate({left:'15vw'},10000)
+	})
+$('#cloud3').animate({left:'0vw'},10000,function(){
+	$(this).animate({left:'40vw'},10000)
+	})
+
+} wavewave1();// 구름 움직임
+
+
+function wavewave2(){
+	 setTimeout(wavewave2,1500)
+$('#boat').animate({left:'5vw',top:'40vh'},1500,function(){
+	$(this).animate({left:'0vw',top:'48vh'},1500)
+	});
+	
+$('#people').animate({left:'9vw',top:'32vh'},1500,function(){
+	$(this).animate({left:'4vw',top:'40vh'},1500)
+	});
+	
+$('#kid').animate({top:'40vh'},1500,function(){
+	$(this).animate({top:'48vh'},1500)
+	});
+} wavewave2(); // 사람,배움직임
+
+function picket(){
+	 setTimeout(picket,1000)
+$('#picket').animate({left:'25vw',top:'71vh'},550,function(){
+	$(this).animate({left:'25vw',top:'73vh'},550)
+});
+} picket();//피켓 움직임
+$(function(){
+  $('#picket').click(function(){
+    $('#closing').show();
+  
+  });
+});
+
+
+
+});
+
+</script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="logo"><a href="index.html"><img src="img/usual_logo2.png"></a></div>
+    <div id="copyright">ⓒ Earthwithus Corp.</div>
+	<article id="r1">
+    	
+        
+    	<div id="refugeeEp1">
+    	<ul>
+        	<li id="s1"><img src="img/soldier1.png"></li>
+            <li id="s2"><img src="img/soldier2.png"></li>
+            <li id="s3"><img src="img/soldier3.png"></li>
+            <li id="s4"><img src="img/soldier4.png"></li>
+            <li id="s5"><img src="img/soldier5.png"></li>
+            <li><img src="img/soldier_bomb.png"></li>
+            <li id="tank"><img src="img/tank.png"></li>
+            <li><img src="img/bombb.png"></li>
+            <li><img src="img/line.png"></li>
+            <li><img src="img/bomb_effect.png"></li>
+            <li id="bomba" class="bombbomb"><img src="img/soldier_effect.png"></li>
+            <li id="bombb" class="bombbomb"><img src="img/soldier_effect.png"></li>
+            <li id="bombc" class="bombbomb"><img src="img/soldier_effect.png"></li>
+            <li id="flight"><img src="img/flight.png"></li>
+            <li id="refugeef"><img src="img/familly.png"></li>
+            <li id="kid1"><img src="img/kid1.png"></li>
+            
+        </ul>
+        </div>
+	</article>
+	<article id="r2">
+
+    	<div id="refugeeEp2">
+        	<ul>
+            	<li id="cloud1"><img src="img/cloud1.png"></li>
+                <li id="cloud2"><img src="img/cloud2.png"></li>
+                <li id="cloud3"><img src="img/cloud3.png"></li>
+                <li id="people"><img src="img/lifeboat_people.png"></li>
+                <li id="wvwv1"><img src="img/refugee_wave1.png"></li>
+                <li id="wvwv2"><img src="img/refugee_wave2.png"></li>
+                <li id="wvwv3"><img src="img/refugee_wave3.png"></li>                
+                <li id="boat"><img src="img/lifeboat.png"></li>
+                <li id="kid"><img src="img/kid.png"></li>
+            </ul>
+        </div>
+          <div class="thunder">
+  <canvas class="canvas" id="canvas1"></canvas>
+  <canvas class="canvas" id="canvas2"></canvas>
+  <canvas class="canvas" id="canvas3"></canvas>
+		</div>
+	</article>
+	<article id="r3">
+    	<ul>
+        	<li><img src="img/citizen.png"></li>
+            <li id="picket"><a href="closing1.html"><img src="img/picket.png"></a></li>
+            <li id="nono"><p>"NO REFUGEE" <br>피켓을 클릭하세요.</p></li>
+            <li id="wall"><img src="img/wall.png"></li>
+           
+        </ul>
+	</article>
+    
+    
+    <div class="container">
+<div class="wrapper"><img src="img/film.png"></div>
+</div>
+<div class="ww_animation">
+	<div class="movie start">
+    	<img src="img/w_walking01.png">
+        <img src="img/w_walking02.png">
+        <img src="img/w_walking03.png">
+        <img src="img/w_walking04.png">
+        <img src="img/w_walking05.png">
+        <img src="img/w_walking06.png">
+        <img src="img/w_walking07.png">
+        
+    </div>
+    <div class="movie wheel">
+    	<img src="img/w_walking01.png">
+        <img src="img/w_walking01.png">
+        <img src="img/w_walking01.png">
+        <img src="img/w_walking01.png">
+        <img src="img/w_walking01.png">
+        
+        <img src="img/w_walking02.png">
+        <img src="img/w_walking02.png">
+        <img src="img/w_walking02.png">
+        <img src="img/w_walking02.png">
+        <img src="img/w_walking02.png">
+        
+        <img src="img/w_walking03.png">
+        <img src="img/w_walking03.png">
+        <img src="img/w_walking03.png">
+        <img src="img/w_walking03.png">
+        <img src="img/w_walking03.png">
+        
+        <img src="img/w_walking04.png">
+        <img src="img/w_walking04.png">
+        <img src="img/w_walking04.png">
+        <img src="img/w_walking04.png">
+        <img src="img/w_walking04.png">
+        
+        <img src="img/w_walking05.png">
+         <img src="img/w_walking05.png">
+          <img src="img/w_walking05.png">
+           <img src="img/w_walking05.png">
+            <img src="img/w_walking05.png">
+            
+            
+        <img src="img/w_walking06.png">
+        <img src="img/w_walking06.png">
+        <img src="img/w_walking06.png">
+        <img src="img/w_walking06.png">
+        <img src="img/w_walking06.png">
+        
+        <img src="img/w_walking07.png">
+        <img src="img/w_walking07.png">
+        <img src="img/w_walking07.png">
+        <img src="img/w_walking07.png">
+        <img src="img/w_walking07.png">
+        
+    </div>
+</div>
+
+<div class="scroll-tooltip">
+	<img src="img/scroll_downpng.png">
+</div>
+
+</div>
+</body>
+</html>

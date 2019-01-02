@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>again</title>
+<style>
+* {margin:0; padding:0;}
+#wrap {width:1920px; height:974px; position:relative;}
+#logo{width:6%; position:fixed; z-index:9999; top:1.5vh; left:1.5vh; opacity:0.8}
+#logo>a{width:6vw; display:block;}
+#logo>a>img{width:6vw;}
+#wrap #footer {position:absolute;z-index:11; top:95%; left:90%;}
+
+#bg {width:100%; height:100%; background-image:url(img/popbg1.png); background-size:cover; background-position:center; position:relative;}
+#s1 {position:absolute; left:550px; top:200px; opacity:0;}
+#s2 {position:absolute; left:1200px; top:200px; opacity:0;}
+
+
+#left { position:absolute; top:40%; left:30%; opacity:0;}
+#right {position:absolute; top:40%; right:28%; opacity:0;}
+#left img {width:70%;}
+#right img {width:70%;}
+</style>
+<script src="js/jquery-3.2.1.js">
+</script>
+<script>
+$(document).ready(function(e) {
+    $('#s1').delay(500).animate({opacity:1},4000);
+	 $('#s2').delay(4000).animate({opacity:1},4000);
+	 	$('#left').delay(6000).animate({opacity:1});
+	$('#right').delay(6000).animate({opacity:1});
+});
+</script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="logo"><a href="index.html"><img src="img/usual_logo2.png" alt="로고"></a></div>
+    <div id="footer">ⓒ Earthwithus Corp.</div>
+	<div id="bg">
+    	<div id="s1"><img src="img/s2.png" alt="말풍선1"></div>
+        <div id="s2"><img src="img/s3.png" alt="말풍선2"></div>
+    	<a href="crack.html" id="left"><img src="img/yes.png" alt="YES"></a>
+        <a href="exit.html" id="right"><img src="img/no.png" alt="NO"></a>
+    </div>
+</div>    
+</body>
+</html>

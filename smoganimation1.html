@@ -1,0 +1,688 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>당신의 지구 : 스모그</title>
+<style>
+body{width:100%; height:100%; overflow:hidden;}
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{text-decoration:none; color:#333;}
+img{width:100%; height:100%;}
+
+#wrap{width:100%; height:100%;}
+#wrap>div{position:absolute;}
+#logo{width:6%; position:absolute; z-index:9999; top:1.5vh; left:1.5vh; opacity:0.8}
+#copyright{position:absolute;top:97.5vh; right:10px; color:#666; font-size:0.6vw; z-index:9999}
+
+article{width:33.33333333334%; height:100%; float:left;}
+
+#a1{width:33.33333333334vw; height:100vh; position:relative;}
+
+#a1 div{position:absolute;}
+
+#a2{width:33.33333333334vw; height:100vh; position:relative;}
+
+#a2 div{position:absolute;}
+
+#a3{width:33.33333333334vw; height:100vh; position:relative;}
+
+#a3 div{position:absolute;}
+
+#buttonbg1{width:33.33333333334vw; height:100vh; 
+			  background-color:rgba(0,0,0,0.8);
+			  z-index:10;}
+			  
+			  
+			  
+#pbutton1{  width:10.364583333333334vw; height:20.5vh; 
+				 top:50%;
+				 left:50%;
+				 margin-left:-5.156vw;
+				 margin-top:-10.25vh;
+				 z-index:11;
+				 cursor:pointer;}
+#pbutton1_1{  width:10.364583333333334vw; height:20.5vh; 
+				 top:50%;
+				 left:50%;
+				 margin-left:-5.156vw;
+				 margin-top:-10.25vh;
+				 z-index:11;
+				 display:none;
+				 cursor:pointer;}
+#clickp1{width:5.3125vw; height:11.2vh;
+			 top:23%; left:50%; margin-left:-2.66vw; z-index:500; opacity:1}
+#clickp2{width:5.3125vw; height:11.2vh;
+			 top:23%; left:50%; margin-left:-2.66vw;z-index:500;opacity:0}
+#clickp3{width:5.3125vw; height:11.2vh;
+			 top:23%; left:50%; margin-left:-2.66vw;z-index:500;opacity:0}
+			 
+.clickp{animation: yuyu  0.5s linear infinite alternate}
+ @keyframes yuyu {
+        from {
+            transform: translateY(0px)
+        }
+        to {
+            transform: translateY(30px)
+        }
+    }
+				 
+#buttonbg2{width:33.33333333334vw; height:100vh; 
+			  background-color:rgba(0,0,0,0.8);
+			  z-index:10;
+			  opacity:1}
+#pbutton2{  width:10.364583333333334vw; height:20.5vh; 
+				 top:50%;
+				 left:50%;
+				 margin-left:-5.156vw;
+				 margin-top:-10.25vh;
+				 z-index:11;
+				 cursor:pointer;}
+#pbutton2_1{  width:10.364583333333334vw; height:20.5vh; 
+				 top:50%;
+				 left:50%;
+				 margin-left:-5.156vw;
+				 margin-top:-10.25vh;
+				 z-index:11;
+				 display:none;
+				 cursor:pointer;}
+				 
+#buttonbg3{width:33.33333333334vw; height:100vh; 
+			  background-color:rgba(0,0,0,0.8);
+			  z-index:10;
+			  opacity:1}
+#pbutton3{  width:10.364583333333334vw; height:20.5vh; 
+				 top:50%;
+				 left:50%;
+				 margin-left:-5.156vw;
+				 margin-top:-10.25vh;
+				 z-index:11;
+				 cursor:pointer;}
+#pbutton3_1{  width:10.364583333333334vw; height:20.5vh; 
+				 top:50%;
+				 left:50%;
+				 margin-left:-5.156vw;
+				 margin-top:-10.25vh;
+				 z-index:11;
+				 display:none;
+				 cursor:pointer;}
+
+#smog1Ep{width:33.33333333334vw; height:100vh; 
+			    overflow:hidden;
+				
+				background-image:url(img/smogbg.png); 
+				background-position:left; 
+				background-size:100% 100%;}
+				
+#smog2Ep{width:33.33333333334vw; height:100vh; 
+			    overflow:hidden;
+				
+				background-image:url(img/smogbg.png); 
+				background-position:right; 
+				background-size:cover;}
+				
+#smog3Ep{width:33.33333333334vw; height:100vh; 
+			    overflow:hidden;
+				background-image:url(img/ep3bg.png); 
+				background-position:center; 
+				background-size:cover;}
+				
+				
+				
+#smog1Ep>ul{position:relative;}
+#smog1Ep>ul>li{position:absolute; }
+#smog1Ep>ul>li:nth-child(1){width:30.520833333333336vw; height:36.1vh; top:-49vh;}
+#smog1Ep>ul>li:nth-child(2){width:33.33333333334vw; height:41vh; top:-54vh;}
+#smog1Ep>ul>li:nth-child(3){width:33.33333333334vw; height:100vh; top:-100vh}
+#smog1Ep>ul>li:nth-child(4){width:33.33333333334vw; height:100vh; z-index:8}
+#smog1Ep>ul>li:nth-child(5){width:10.625vw; height:14.1vh; left:13.5vw; top:46vh; display:none;}
+#smog1Ep>ul>li:nth-child(6){width:10.625vw; height:14.1vh; left:26vw; top:60vh; display:none;}
+#smog1Ep>ul>li:nth-child(7){width:33.33333333334vw; height:100vh; z-index:7}
+#smog1Ep>ul>li:nth-child(8){width:100px; height:100px; }
+#smog1Ep>ul>li:nth-child(9){width:33.33333333334vw; height:100vh; opacity:1; z-index:6}
+
+#smog2Ep>ul{position:relative;}
+#smog2Ep>ul>li{position:absolute; }
+#smog2Ep>ul>li:nth-child(1){width:73.4375vw;height:59.1vh; top:35vh; left:0;}
+#smog2Ep>ul>li:nth-child(2){width:33.33333333334vw; height:100vh; top:-70vh; left:-60vh;}
+#smog2Ep>ul>li:nth-child(3){width:33.33333333334vw; height:100vh;}
+
+
+#smog3Ep>ul{position:relative;}
+#smog3Ep>ul>li{position:absolute; }
+#smog3Ep>ul>li:nth-child(1){width:33.33333333334vw; height:100vh; z-index:1}
+#smog3Ep>ul>li:nth-child(2){width:33.33333333334vw; height:100vh;z-index:2}
+#smog3Ep>ul>li:nth-child(3){width:33.33333333334vw; height:100vh;z-index:4;}
+#smog3Ep>ul>li:nth-child(4){width:10.625vw; height:14.4vh; left:15vw; top:10vh; z-index:3;}
+#smog3Ep>ul>li:nth-child(5){width:33.33333333334vw; height:100vh;z-index:5; }
+#smog3Ep>ul>li:nth-child(6){width:33.33333333334vw; height:100vh;z-index:6; }
+#smog3Ep>ul>li:nth-child(7){width:5.9375vw; height:11.4vh; top:80vh;left:7vw;z-index:7}
+#smog3Ep>ul>li:nth-child(8){width:33.33333333334vw; height:100vh;z-index:8}
+#smog3Ep>ul>li:nth-child(9){width:100px; height:100px;z-index:20;}
+#a1>#pbutton1:hover ~ #buttonbg1{opacity:0}
+#a2>#pbutton2:hover ~ #buttonbg2{opacity:0}
+#a3>#pbutton3:hover ~ #buttonbg3{opacity:0}
+
+
+#lastscene1{width:100vw; height:100vh; background-color:#121212; position:relative; z-index:500;top:-100vh;}
+
+#lastscene1>ul{position:relative;}
+#lastscene1>ul>li{position:absolute; width:100%; height:100%; color:#FFF; font-size:3.2vw; }
+#lastscene1>ul>li>span{color:#999; font-size:0.6vw}
+
+#lastscene1>ul>li:nth-child(1){width:540px; height:370px; top:20vh;left:5vw;opacity:0}
+#lastscene1>ul>li:nth-child(2){font-size:2.5vw; top:23vh; left:35.5vw;opacity:0}
+#lastscene1>ul>li:nth-child(3){width:540px; height:370px; top:23vh; left:7vw;opacity:0}
+#lastscene1>ul>li:nth-child(4){font-size:2.5vw; top:23vh; left:37.5vw;opacity:0}
+#lastscene1>ul>li:nth-child(5){width:540px; height:370px;top:39vh; left:9vw;opacity:0}
+#lastscene1>ul>li:nth-child(6){font-size:2.5vw; top:50vh; left:39.2vw;opacity:0}
+#lastscene1>ul>li:nth-child(7){width:540px; height:370px; top:58vh; left:23vw;opacity:0}
+#lastscene1>ul>li:nth-child(8){font-size:2.5vw; top:65vh; left:53vw;opacity:0;opacity:0}
+#lastscene1>ul>li:nth-child(9){width:1280px; height:720px; top:15vh; left:17vw;opacity:0}
+#lastscene1>ul>li:nth-child(10){font-size:2.8vw; top:46vh; text-align:center; left:0vw;opacity:0}
+#lastscene1>ul>li:nth-child(11){top:5vh; left:10vw;opacity:0}
+#lastscene1>ul>li:nth-child(12){top:15vh; left:10vw;opacity:0}
+#lastscene1>ul>li:nth-child(13){width:540px; height:299px;top:30vh; left:15vw;opacity:0}
+#lastscene1>ul>li:nth-child(14){width:960px; height:540px; right:2vw; top:38vh;opacity:0}
+#lastscene1>ul>li:nth-child(15){top:60vh; left:23vw; text-align:center; font-size:2.6vw;opacity:0}
+#lastscene1>ul>li:nth-child(15)>span{color:#333;opacity:0}
+#lastscene1>ul>li:nth-child(16){top:41vh; left:23.4vw; font-size:4vw;opacity:0}
+#lastscene1>ul>li:nth-child(17){color:#666; font-size:1vw; top:75vh; left:85vw;opacity:0}
+#lastscene1>ul>li:nth-child(18){width:442px; height:179px; top:36vh; left:38.5vw; opacity:0}
+
+</style>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jQueryRotateCompressed.js"></script>
+<script>
+$(document).ready(function(e) {
+
+						
+							
+	
+$("#pbutton1").click(function(){
+	
+			$(this).css({opacity:0});
+	        $("#buttonbg1").css({opacity:0});
+			$("#smog1Ep>ul>li:nth-child(9)").css({opacity:0});
+			$("#clickp1").css({opacity:0});
+			
+			
+setInterval(amu,500);
+
+
+				
+				function amu(){
+
+$('#smog1Ep>ul>li:nth-child(5)').animate({top:'43vh'},500,function(){
+				$(this).animate({top:'46vh'},500)});
+				
+$('#smog1Ep>ul>li:nth-child(6)').animate({top:'60vh'},500,function(){
+				$(this).animate({top:'57vh'},500)});
+				}; //ep1 연기 반복
+				
+			
+				$('#smog1Ep>ul>li:nth-child(8)').delay(9200).animate({top:10},500,function(){
+					
+								$("#buttonbg1").css({opacity:1});
+			                    $('#pbutton1_1').css({'display':'block'});
+								$('#clickp2').css({'opacity':1})
+					});
+			
+				
+			
+		$('#smog1Ep>ul>li:nth-child(1)').delay(4200).animate({'top':'49vh'},1200,'easeOutBounce',function(){
+			 var smogNum = 0;
+				var interval1 = setInterval(function () {
+				$("#smogEp1_4").find("img").attr('src', 'img/smog' + (smogNum+1) + '.png');
+				smogNum++
+				if(smogNum>=22){clearInterval(interval1)};
+				},150) //스모그 커지는 애니메이션
+				var factoryNum = 0;	
+				var interval2 = setInterval(function () {
+				
+				$("#smogEp1_3").find("img").attr('src', 'img/factory3-' + (factoryNum+1) + '.png');
+				
+				factoryNum++
+				if(factoryNum>=7){clearInterval(interval2)};
+					
+					},600)// 건물깜빡임 애니메이션
+			});
+		$('#smog1Ep>ul>li:nth-child(2)').delay(2200).animate({'top':'54vh'},2000,'easeOutBounce',function(){
+			$('#smog1Ep>ul>li:nth-child(5)').css({'display':'block'});
+			
+			});
+			
+			
+		$('#smog1Ep>ul>li:nth-child(3)').delay(500).animate({'top':0},2000,'easeOutBounce',function(){$('#smog1Ep>ul>li:nth-child(6)').css({'display':'block'})
+			});
+			});//#pbutton1 end		
+				
+			  
+					
+					
+				
+						
+						
+						
+					
+				
+				
+
+				
+				
+				
+			
+			
+			
+
+			
+			
+					
+						
+		
+				
+			
+			
+					
+					
+					
+
+$("#pbutton2").click(function(){
+	
+	 $(this).css({opacity:0});
+	 $("#clickp2").css({opacity:0});
+	 $("#buttonbg2").css({opacity:0});
+	 $("#smog2Ep>ul>li:nth-child(1)").animate({left:'-35vw'},9000,function(){
+		 $("#smog2Ep>ul>li:nth-child(1)").animate({left:0},9000,function(){
+			 
+			 
+			 })
+			 });
+			 
+	$("#smog2Ep>ul>li:nth-child(2)").animate({left:'7vw'},100,function(){
+		$(this).animate({left:'-10vw',top:'-60vh'},3000,function(){
+			$(this).animate({left:'10vw',top:'-50vh'},3000,function(){
+				$(this).animate({left:'-10vw',top:'-40vh'},3000,function(){
+					$(this).animate({left:'10vw',top:'-30vh'},3000,function(){
+						$(this).animate({left:'-10vw',top:'-10vh'},3000,function(){
+							$(this).animate({left:'7vw',top:0},3000,function(){
+								$("#buttonbg2").css({opacity:1});
+								$("#clickp3").css({opacity:1});
+			                    $('#pbutton2_1').css({'display':'block'});
+								
+								})
+							})
+						})
+					})
+				})
+			})		
+		});
+	 
+
+	});//#pbutton2 end
+									
+									
+									
+									
+
+				
+				
+				
+
+	$("#pbutton3").click(function(){
+			$(this).css({opacity:0});
+			$("#clickp3").css({opacity:0});
+	        $("#buttonbg3").css({opacity:0});
+			$('#smogEp3_4').css({transform:'scaleX(-1)'},500)	
+	
+							var angle = 0;
+setInterval(function(){
+      angle+=3;
+     $("#smog3Ep>ul>li:nth-child(7)").rotate(angle);
+	 
+},50)// 공 회전
+					
+			
+			
+			$('#smogEp3_4').animate({left:'7vw'},2000,function(){
+				
+				$('#smogEp3_4').css({transform:'scaleX(1)'})
+				$(this).animate({left:'15vw',top:'30vh'},2000,function(){
+					
+					$(this).css({transform:'scaleX(-1)'})
+					$(this).animate({left:'7vw',top:'35vh'},2000,function(){
+						$(this).css({transform:'scaleX(1)'})
+						$(this).animate({left:'15vw',top:'25vh'},2000,function(){
+							$(this).css({transform:'scaleX(-1)'})
+							$(this).animate({left:'7vw',top:'10vh'},2000,function(){
+								$("#buttonbg3").css({opacity:1});
+			                    $('#pbutton3_1').css({'display':'block'},function(){
+									});
+								
+								})
+							})
+						})
+					
+					})
+				});	
+			
+			
+			
+		
+		
+
+			
+			setInterval(amu2,1500);
+
+
+				
+				function amu2(){
+					
+					var smogNum2 = 0;
+				var interval2 = setInterval(function () {
+				$("#smogEp3_5").find("img").attr('src', 'img/ep3li_' + (smogNum2) + '.png');
+				smogNum2++
+				if(smogNum2>=2){clearInterval(interval2)};
+				},1000) //아이 빼꼼 애니메이션
+				
+			$('#smog3Ep>ul>li:nth-child(7)').animate({left:'25vw'},1500,function(){
+				$('#smog3Ep>ul>li:nth-child(7)').animate({left:'5vw'},1500)
+				
+				})};
+				
+
+													
+			
+		$('	#smog3Ep>ul>li:nth-child(9)').animate({left:100},11000,function(){
+			$('#lastscene1').animate({top:0},2000,function(){
+				$('#smog1').animate({'opacity':1},2000,function(){
+					$('#smog2').delay(1000).animate({opacity:1},2000,function(){
+						$('#smog2').delay(2000).animate({opacity:0},2000)
+						$('#smog1').delay(2000).animate({opacity:0},2000,function(){
+							$('#smog3').animate({opacity:1},2000)
+							$('#smog4').delay(2000).animate({opacity:1},2000,function(){
+								$('#smog4').delay(2000).animate({opacity:0},2000)
+								$('#smog3').delay(2000).animate({opacity:0},2000,function(){
+									$('#smog5').animate({opacity:1},2000)
+									$('#smog6').delay(2000).animate({opacity:1},2000,function(){
+										$('#smog6').delay(2000).animate({opacity:0},2000)
+										$('#smog5').delay(2000).animate({opacity:0},2000,function(){
+											$('#smog7').animate({opacity:1},2000)
+											$('#smog8').delay(2000).animate({opacity:1},2000,function(){
+												$('#smog8').delay(1000).animate({opacity:0},2000)
+												$('#smog7').delay(1000).animate({opacity:0},2000,function(){
+												
+													
+													$('#smog9').delay(1000).animate({opacity:1},2000)
+													$('#smog10').delay(2000).animate({opacity:1},2000,function(){
+														
+														$('#smog9').delay(1000).animate({opacity:0},2000)
+														$('#smog10').delay(4000).animate({opacity:0},2000,function(){
+															$('#smog13').delay(1000).animate({opacity:1},2000)
+															$('#smog11').delay(1000).animate({opacity:1},2000)
+															
+															$('#smog12').delay(1000).animate({opacity:1},2000,function(){
+																$('#smog13').delay(1000).animate({opacity:0},2000)
+																$('#smog11').delay(1000).animate({opacity:0},2000,function(){
+																	$('#smog12').delay(1000).animate({opacity:0},2000)
+																	$('#smog14').delay(3000).animate({opacity:1},2000,function(){
+																		
+																		$('#smog14').delay(1000).animate({opacity:0.2},2000)
+																		$('#smog15').delay(1000).animate({opacity:1},2000,function(){
+																			$('#smog15').delay(1000).animate({opacity:0},2000)
+																			$('#smog14').delay(1000).animate({opacity:0},2000,function(){
+																				$('#smog16').delay(1000).animate({opacity:1},2000)
+																				$('#smog17').delay(2500).animate({opacity:1},2000,function(){
+																					$('#smog16').delay(1000).animate({opacity:0},2000,function(){
+																						$('#smog18').animate({opacity:1},2000)
+																						$('#logo').animate({opacity:0})
+																						})
+																					
+																					})
+																				
+																				})
+																			
+																			})
+																		})
+																	
+																	})
+																
+																
+																
+																})
+															
+															
+															})
+														})
+													})
+												
+												})
+											})
+										})
+									})
+								})
+							})
+						})
+					})
+				})	
+								
+									
+		});	//마지막 씬		
+							
+							
+							
+							
+							
+									
+		});		//"#pbutton3" end			
+						
+						
+						
+		
+		
+		
+					
+				
+					
+					
+					
+					
+						
+						
+				
+				
+			
+			
+				
+
+});
+
+
+</script>
+</head>
+
+<body>
+<div id="wrap">
+    <div id="logo"><a href="index.html"><img src="img/usual_logo2.png"></a></div>
+    <div id="copyright">ⓒ Earthwithus Corp.</div>
+<article id="a1">
+
+	<div id="pbutton1"><img src="img/button1.png"></div>
+    <div id="pbutton1_1"><img src="img/Nbutton.png"></div>
+	<div id="buttonbg1"></div>
+    	
+     
+    
+   <div id="smog1Ep">
+     <ul>
+        <li class="aa1" id="smogEp1_1">
+            <img src="img/factory1.png">
+        </li>
+        <li class="aa1" id="smogEp1_2">
+            <img src="img/factory2.png">
+        </li>
+        <li class="aa1" id="smogEp1_3">
+            <img src="img/factory3-0.png">
+        </li>
+        <li class="aa1" id="smogEp1_4">
+            <img src="img/smog0.png">
+        </li>
+        <li class="aa1" id="smogEp1_5">
+            <img src="img/whitesmog.png">
+        </li>
+    
+   		 <li class="aa1" id="smogEp1_6">
+            <img src="img/whitesmog.png">
+        </li>
+      	<li class="aa1" id="smogEp1_7">
+            <img src="img/ep1frame.png">
+        </li>
+        <li class="aa1" id="smogEp1_8">
+            
+        </li>
+        
+        <li class="aa1" id="smogEp1_9">
+            <img src="img/factory0.png">
+        </li>
+       
+        
+     </ul>
+    </div>
+    <div id="clickp1" class="clickp">
+    
+            <img src="img/arrow2.png">
+        
+    </div>
+</article> 
+
+
+
+<article id="a2">
+
+<div id="pbutton2"><img src="img/button2.png"></div>
+<div id="pbutton2_1"><img src="img/Nbutton.png"></div>
+	<div id="buttonbg2"></div>
+    	
+    
+<div id="smog2Ep">
+     <ul>
+        <li class="aa2" id="smogEp2_1">
+            <img src="img/city.png">
+        </li>
+        
+        <li class="aa2" id="smogEp2_2">
+            <img src="img/bigsmog.png">
+        </li>
+        
+        <li class="aa2" id="smogEp2_3">
+            <img src="img/ep2frame.png">
+        </li>
+        
+  	</ul>
+    </div>
+    <div id="clickp2" class="clickp">
+    
+            <img src="img/arrow2.png">
+        
+    </div>
+    
+   		
+   
+        
+   
+
+
+</article>
+<article id="a3">
+<div id="pbutton3"><img src="img/button3.png"></div>
+<div id="pbutton3_1"><img src="img/Nbutton.png"></div>
+	<div id="buttonbg3"></div>
+    	
+    
+<div id="smog3Ep">
+     <ul>
+        <li class="aa3" id="smogEp3_1">
+           <img src="img/ep3li1.png"> 
+        </li>
+        <li class="aa3" id="smogEp3_2">
+            <img src="img/ep3li2.png"> 
+        </li>
+        <li class="aa3" id="smogEp3_3">
+            <img src="img/ep3li3.png"> 
+        </li>
+        <li class="aa3" id="smogEp3_4">
+            <img src="img/smallsmog.png"> 
+        </li>
+        <li class="aa3" id="smogEp3_5">
+            <img src="img/ep3li_0.png"> 
+        </li>
+        <li class="aa3" id="smogEp3_6">
+             
+        </li>
+        <li class="aa3" id="smogEp3_7">
+            <img src="img/football.png"> 
+        </li>
+        
+        <li class="aa3" id="smogEp3_8">
+            <img src="img/ep1frame.png"> 
+        </li>
+        
+        <li class="aa3" id="smogEp3_9">
+             
+
+  	</ul>
+    </div>
+    <div id="clickp3" class="clickp">
+    
+            <img src="img/arrow2.png">
+        
+    </div>
+
+</article>
+
+
+<div id="lastscene1" class="lastscene">
+<ul>
+<li id="smog1"><img src="img/nolooksmog.jpg" alt="스모그 이미지"></li>
+<li id="smog2">고속도로 인터체인지에서 <br> 나가는 출구를 찾지 못해 <br> 차에 내려서 살펴보고있다. <span>매일신문 ▲ 사진출처 = 봉황망(凤凰网)</span></li>
+<li id="smog3"><img src="img/nolooksmog2.jpg"></li>
+<li id="smog4">중국의 남북 분계선 상징물이 있는 <br> 장쑤(江苏)성 화이안(淮安)시에 <br>짙은 스모그가 껴있다. <span>매일신문 ▲ 사진출처 = 봉황망(凤凰网)</span></li>
+<li id="smog5"><img src="img/nolooksmog3.jpg"></li>
+<li id="smog6">중국 난징시내를 뒤덮은 스모그. <span>매일신문 ▲ 사진출처 = 봉황망(凤凰网)</span></li>
+<li id="smog7"><img src="img/nolooksmog4.jpg"></li>
+<li id="smog8">스모그를 피하기위해<br> 어린아이들이 <br>마스크를 쓰고 있다.  <span>매일신문 ▲ 사진출처 = 봉황망(凤凰网)</span></li>
+<li id="smog9"><img src="img/nolooksmog5.jpg"></li>
+<li id="smog10">"100위안 짜리 지폐를 손에 들고 있어도 <br>그 위에 그려진 마오쩌둥을 보지 못할 정도"<br> <span>매일신문 ▲ 사진출처 = 봉황망(凤凰网)</span></li>
+
+<li id="smog11">환경부-NASA 국내 대기질 첫 공동연구 결과</li>
+<li id="smog12">"한국 미세먼지 52%는 국내서 유발"<span>▲ 출처 : 한국일보</span></li>
+<li id="smog13"><img src="img/nolooksmog6.jpg"></li>
+<li id="smog14"><img src="img/nolooksmog7.jpg"></li>
+<li id="smog15">우리나라 공기질 순위는 최하위권...<Br> 미세먼지 농도 '최악' <span>▲ 출처 : 한국스포츠경제</span></li>
+<li id="smog16">초미세 먼지는 '죽음의 암살자'</li>
+<li id="smog17">▲ 출처 : 매일신문 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 한국일보 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                  한국스포츠경제 <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                 미디어오늘 <br><br>
+                                 
+                  ▲ 사진출처 : 구글(google) <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                봉황망(凤凰网) <br></li>
+ <li id="smog18"><a href="index.html"><img src="img/usual_logo.png"></a></li>
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

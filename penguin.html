@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>당신의 지구 : 남극</title>
+<style>
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{text-decoration:none;color:#333;}
+body{width:100%; height:100%; overflow:hidden}
+
+#wrap3{width:100%; height:100%;}
+#logo{width:6%; position:absolute; z-index:9999; top:1.5vh; left:1.5vh; opacity:0.8}
+#logo>a{width:6vw; display:block;}
+#logo>a>img{width:6vw;}
+#copyright{position:absolute;top:97.5vh; right:10px; color:#666; font-size:0.6vw; z-index:9999}
+#story{position:absolute;top:10vh; left:20vw; z-index:999}
+#yes{position:absolute;top:38vh; left:44vw;z-index:999;animation: ppyong  0.5s linear infinite alternate;
+cursor:pointer;}
+
+  @keyframes ppyong {
+        from {
+            transform: translateY(0px)
+        }
+        to {
+            transform: translateY(15px)
+        }
+    }
+
+
+
+#wrap3>#bg{width:100vw; height:100vh;
+	background:url(img/iceisland.png) no-repeat;
+background-position:center;
+background-size:100% 100%;}
+#wrap3>#bg>ul{position:relative; width:100vw; height:100vh;}
+
+#wrap3>#bg>ul>li{position:absolute; top:0; left:0; }
+#wrap3>#bg>ul>li>img{width:100%; height:100%;}
+
+#wrap3>#bg>ul>li:nth-child(1){width:10%; top:70vh; left:30vw;z-index:9}
+#wrap3>#bg>ul>li:nth-child(2){width:7%;top:70vh; left:47vw;z-index:9}
+#wrap3>#bg>ul>li:nth-child(3){width:10%;top:70vh; left:60vw;z-index:9}
+#wrap3>#bg>ul>li:nth-child(4){width:100%; height:100%;z-index:10; opacity:0}
+#wrap3>#bg>ul>li:nth-child(5){width:100%; height:100%;z-index:10}
+#wrap3>#bg>ul>li:nth-child(6){width:100%; height:300%; top:-300vh;z-index:11}
+#wrap3>#bg>ul>li:nth-child(7){top:37vh; left:200vw;z-index:12}
+#wrap3>#bg>ul>li:nth-child(8){top:120vh; left:-60vw; width:25vw;z-index:12}
+#wrap3>#bg>ul>li:nth-child(9){top:150vh; left:23vw;width:55vw;z-index:12}
+#wrap3>#bg>ul>li:nth-child(10){top:120vh; left:150vw; width:25vw;z-index:12}
+
+#wrap3>#bg>ul>li:nth-child(11){width:7.5%; top:70vh; left:30vw;opacity:0;z-index:9;
+}
+#wrap3>#bg>ul>li:nth-child(12){width:7.5%;top:70vh; left:45.5vw;opacity:0;z-index:9}
+#wrap3>#bg>ul>li:nth-child(13){width:7.5%;top:70vh; left:60vw;opacity:0;z-index:9}
+
+ @keyframes ggang {
+        from {
+            transform: translateY(-10px)
+        }
+        to {
+            transform: translateY(0px)
+        }
+    }
+#wrap3>#bg>ul>li:nth-child(14){width:100%; height:300%; top:-300vh;z-index:12}
+#wrap3>#bg>ul>li:nth-child(15){ width:40vw; top:20vh; left:-60vw;;z-index:14}
+#wrap3>#bg>ul>li:nth-child(16){font-size:4vw; color:#FF0; top:30vh; left:30vw; opacity:0}
+#wrap3>#bg>ul>li:nth-child(17){font-size:4vw; color:#FF0;top:30vh; left:35vw;opacity:0}
+#wrap3>#bg>ul>li:nth-child(18){font-size:4vw; color:#FF0; top:30vh; left:40vw;opacity:0}
+#wrap3>#bg>ul>li:nth-child(19){font-size:4vw; color:#FF0;top:30vh; left:45vw;opacity:0}
+#wrap3>#bg>ul>li:nth-child(20){font-size:4vw; color:#FF0;top:30vh; left:50vw;opacity:0}
+#wrap3>#bg>ul>li:nth-child(21){font-size:4vw; color:#FF0;top:30vh; left:55vw;opacity:0}
+#wrap3>#bg>ul>li:nth-child(22){font-size:4vw; color:#FF0;top:30vh; left:60vw;opacity:0}
+#wrap3>#bg>ul>li:nth-child(23){top:5vh; left:35vw; width:30vw;opacity:0; z-index:333}
+#wrap3>#bg>ul>li:nth-child(24){top:62vh; left:43vw; width:15vw;opacity:0; z-index:333}
+#wrap3>#bg>ul>li:nth-child(24)>a {width:15vw; z-index:333; display:block;}
+#wrap3>#bg>ul>li:nth-child(24)>a>img {width:100%; height:100%}
+</style>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script>
+$(document).ready(function(e) {
+	
+	$('#yes').click(function(){
+		
+		$(this).css({'display':'none'});
+
+		$('#story').animate({opacity:0})
+		
+		
+		
+		
+		var i = 0;
+while ( i < 3) {
+  // do something
+  i++;
+    $("#sun1").animate({left:'10vw'},5000).animate({left:'45vw'},5000,function(){
+		$(this).animate({left:'30vw'},2500)
+		})
+	$("#sun2").animate({left:'30vw'},5000).animate({left:'60vw'},5000,function(){
+		$(this).animate({left:'47vw'},2500)
+		})
+	$("#sun3").animate({left:'45vw'},5000).animate({left:'80vw'},5000,function(){
+		$(this).animate({left:'60vw'},2500)
+		})
+}
+
+
+ $('#sun6').animate({top:'100vh'},35000,function(){
+	 $('#sun7').animate({top:'37vh',left:'68vw'},2500,function(){
+		 $('#sun8').animate({top:'60vh',left:0},2500,function(){
+			 $('#sun9').animate({top:'85vh',left:'23vw'},2500,function(){
+				 $('#sun10').animate({top:'60vh',left:'75vw'},2500,function(){
+					 $('#sun1').animate({opacity:0},function(){
+						 $('#sun11').delay(200).animate({opacity:1},function(){
+							 $('#sun2').animate({opacity:0},function(){
+								 $('#sun12').delay(400).animate({opacity:1},function(){
+									 $('#sun3').animate({opacity:0},function(){
+										 $('#sun13').delay(600).animate({opacity:1},function(){
+											 $('#sun14').animate({top:'100vh'},10000,function(){
+												 $('#sun15').animate({left:'210vh'},3000,function(){
+													 $('#sun7').animate({top:'37vh',left:'200vw'},2500)
+													 $('#sun8').delay(2000).animate({top:'120vh',left:'-60vw'},2500)
+													 $('#sun9').delay(4000).animate({top:'150vh',left:'23vw'},2500)
+													 $('#sun10').delay(6000).animate({top:'120vh',left:'150vw'},2500,function(){
+														 
+														 $('#sun11').animate({left:'40vw'},2500)
+														 $('#sun12').animate({left:'46vw'},2500)
+														 $('#sun13').animate({left:'52vw'},2500,function(){
+															 $('#sun11').css({'animation': 'ggang  0.2s linear infinite alternate'})
+															 $('#sun12').css({'animation': 'ggang  0.2s linear infinite alternate'})
+															 $('#sun13').css({'animation': 'ggang  0.2s linear infinite alternate'})
+															 $('#sun16').delay(500).animate({opacity:1})
+															 $('#sun17').delay(1000).animate({opacity:1})
+															 $('#sun18').delay(1500).animate({opacity:1})
+															 $('#sun19').delay(2000).animate({opacity:1})
+															 $('#sun20').delay(2500).animate({opacity:1})
+															 $('#sun21').delay(3000).animate({opacity:1})
+															 $('#sun22').delay(3500).animate({opacity:1},function(){
+																 $('#sun16').delay(1000).animate({opacity:0})
+																  $('#sun17').delay(1000).animate({opacity:0})
+																   $('#sun18').delay(1000).animate({opacity:0})
+																    $('#sun19').delay(1000).animate({opacity:0})
+																	 $('#sun20').delay(1000).animate({opacity:0})
+																	  $('#sun21').delay(1000).animate({opacity:0})
+																	   $('#sun22').delay(1000).animate({opacity:0},function(){
+																		   
+																		   
+																		   $('#sun23').animate({opacity:1},1500)
+																		   $('#sun24').delay(8000).animate({opacity:1},1000)
+																		   
+																		   })
+																 })
+															 })
+														 })
+													 
+													 })
+												 })
+											 })
+										 })
+									 })
+								 })
+							 })
+						 })
+					 
+					 })
+				 })
+			 })
+		 })
+	 
+	 });
+ });//click event
+ 
+ });
+</script>
+
+
+</head>
+
+<body>
+<div id="wrap3">
+	<div id="logo"><a href="index.html"><img src="img/usual_logo2.png"></a></div>
+    <div id="copyright">ⓒ Earthwithus Corp.</div>
+    <div id="story"><img src="img/penguinstory.png"></div>
+    <div id="yes"><img src="img/yes.png"></div>
+	<div id="bg">
+    	<ul>
+        	
+            
+            <li id="sun1"><img src="img/penguin4.png"></li>
+            <li id="sun2"><img src="img/penguin5.png"></li>
+            <li id="sun3"><img src="img/penguin6.png"></li>
+            
+            <li id="sun4"><img src="img/icelsland3.png"></li>
+            <li id="sun5"><img src="img/iceisland2.png"></li>
+            <li id="sun6"><img src="img/snow.png"></li>
+            <li id="sun7"><img src="img/rightupflower.png"></li>
+            <li id="sun8"><img src="img/leftflower.png"></li>
+            <li id="sun9"><img src="img/downgrass.png"></li>
+            <li id="sun10"><img src="img/rightflower.png"></li>
+              <li id="sun11"><img src="img/penguin1.png"></li>
+            <li id="sun12"><img src="img/penguin2.png"></li>
+            <li id="sun13"><img src="img/penguin3.png"></li>
+            <li id="sun14"><img src="img/rain.png"></li>
+           
+            <li id="sun15"><img src="img/windy.png"></li>
+            
+            <li id="sun16">너</li>
+            <li id="sun17">무</li>
+			<li id="sun18">추</li>
+			<li id="sun19">워</li>
+            <li id="sun20">ㆍ</li>
+            <li id="sun21">ㆍ</li>
+            <li id="sun22">ㆍ</li>
+			<li id="sun23"><img src="img/savepenguin.png"></li>
+			<li id="sun24"><a href="index.html"><img src="img/usual_logo.png"></a></li>
+
+
+
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>

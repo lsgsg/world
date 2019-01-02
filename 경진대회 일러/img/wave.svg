@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#08A4DF" d="M94.567,399.665c0,0,36.923,46.229,154.744,3.717
+	c157.983-57.002,212.008-9.934,268.809,36.402c-51.779-27.1-104.525-79.625-238.907-35.33
+	C169.995,440.456,122.773,440.456,94.567,399.665z"/>
+</svg>
+<defs>
+<style type="text/css">
+.st0{ fill:none; stroke:#ffffff;
+stroke-linecap:round; stroke-linejoin:round;
+stroke-miterlimit:10;}
+.st0{ stroke-dasharray:2500;
+stroke-dashoffset:0;
+
+-webkit-animation:dash 10s linear forwards; 
+-o-animation:dash 10s linear forwards; 
+-moz-animation:dash 10s linear forwards; 
+animation:starlight 10s linear forwards;
+}
+@-webkit-keyframes starlight{ 
+      from{stroke-dashoffset:2500;} 
+      to{stroke-dashoffset:0;} 
+} 
+</style>
+</defs>
